@@ -19,9 +19,10 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.1/css/all.css" integrity="sha384-QI8z31KmtR+tk1MYi0DfgxrjYgpTpLLol3bqZA/Q1Y8BvH+6k7/Huoj38gQOaCS7" crossorigin="anonymous">
 
 <!-- Custom CSS -->
-
-<link rel="stylesheet" href="{{ "css/nix-"{{ .Params.theme | default 'light' }}".css" | absURL }}">
-
+{{ with .Site.Params.theme | default light }}
+{{ $cssurl := printf "css/nix-%s.css" $.}}
+<link rel="stylesheet" href="{{ $cssurl | absURL }}">
+{{end}}
 <!-- favicon -->
 {{ with .Site.Params.Favicon }}
 <link rel="shortcut icon" href="{{ . }}">
