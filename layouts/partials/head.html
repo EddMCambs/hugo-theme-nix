@@ -20,7 +20,7 @@
 
 <!-- Custom CSS -->
 {{ with .Site.Params.theme | default "light" }}
-{{ $cssurl := printf "css/nix-%s.css" $.}}
+{{ $cssurl := printf "css/nix-%s.css" . }}
 <link rel="stylesheet" href="{{ $cssurl | absURL }}">
 {{end}}
 <!-- favicon -->
