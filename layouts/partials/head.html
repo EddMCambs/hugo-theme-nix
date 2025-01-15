@@ -20,7 +20,7 @@
 
 <!-- Custom CSS -->
 
-<link rel="stylesheet" href="{{ "css/nix-{{ .Params.theme | default 'light' }}.css" | absURL }}">
+<link rel="stylesheet" href="{{ "css/nix-"{{ .Params.theme | default 'light' }}".css" | absURL }}">
 
 <!-- favicon -->
 {{ with .Site.Params.Favicon }}
