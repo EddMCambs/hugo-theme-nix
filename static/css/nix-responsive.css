@@ -203,24 +203,24 @@ td {
 
 @media (prefers-color-scheme: dark) {
     * {
-        color: #e8e6e3;
+        color: #cccccc;
     }
     body {
         background-color: #191b1c;
     }
     .user-description {
-        border-color: #7e7568;
+        border-color: #cccccc;
     }
     .user-picture {
-        border-color: #7e7568;
+        border-color: #cccccc;
     }
     i {
-        color: #c8c3bc;
+        color: #cccccc;
     }
     .footer {
 	    background-color: #1e2021;
     }
     .post-header {
-        background-color: #1e2021;
+        background-color: #141313;
     }
 }
